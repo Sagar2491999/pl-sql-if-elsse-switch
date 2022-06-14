@@ -1,0 +1,38 @@
+declare 
+s number(5):=16;
+begin
+
+if(s=5) then
+dbms_output.put_line('if block execute');
+elsif(s=6)then 
+dbms_output.put_line('elsif block execute6');
+elsif(s=7)then
+dbms_output.put_line('elsif execute 7');
+elsif(s=8)then
+dbms_output.put_line('elsif execute 8');
+else
+dbms_output.put_line('else block execute');
+end if;
+end;
+
+declare
+grade varchar2(15):='d';
+begin
+case grade
+when 'A' then dbms_output.put_line('Excellent');
+when 'B' then dbms_output.put_line('very good');
+when 'c' then dbms_output.put_line('Well done');
+else dbms_output.put_line('No such grade');
+end case;
+end;
+
+ declaRE
+ grade varchar2(19):='B';
+ begin
+ case
+ when grade='A' then dbms_output.put_line('Excellent');
+ when grade='B' then dbms_output.put_line('very good');
+ when grade='c'then dbms_output.put_line('Well done');
+ else dbms_output.put_line('No such grade');
+end case;
+end;
